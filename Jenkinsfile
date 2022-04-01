@@ -1,5 +1,5 @@
 // Defining Variable
-def myVariable = "C:/ProgramData/Jenkins/.jenkins/workspace/unittestdemo/ConsoleApp/ConsoleApp"
+def myVariable = "C:\ProgramData\Jenkins\.jenkins\workspace\unittestdemo\ConsoleApp"
 pipeline 
 {
 		
@@ -44,14 +44,14 @@ pipeline
                 //C:\ProgramData\Jenkins\.jenkins\workspace\demo1\aspnet-core-dotnet-core
             }
         }
-        /*stage('Test')
+        stage('Test')
         {
             steps
             {
                 bat "dotnet test ${myVariable}"
                 //C:\ProgramData\Jenkins\.jenkins\workspace\demo1\aspnet-core-dotnet-core
             }
-        }*/
+        }
        /* stage('publish') // Publishing the webapp
         {
             steps
