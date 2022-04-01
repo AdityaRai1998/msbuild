@@ -1,5 +1,5 @@
 // Defining Variable
-def myVariable = "C:\ProgramData\Jenkins\.jenkins\workspace\unittestdemo\ConsoleApp"
+def myVariable = "C:/ProgramData/Jenkins/.jenkins/workspace/unittestdemo/ConsoleApp"
 pipeline 
 {
 		
