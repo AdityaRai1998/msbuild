@@ -1,16 +1,16 @@
 // Defining Variable
-//def myVariable = "C:/ProgramData/jenkins/.jenkins/workspace/PiplineSCM/aspnet-core-dotnet-core/aspnet-core-dotnet-core.csproj"
+def myVariable = "C:\ProgramData\Jenkins\.jenkins\workspace\unittestdemo\ConsoleApp\ConsoleApp"
 pipeline 
 {
 		
     agent any
 	stages 
 	{
-	    stage('Git CheckOut') {
+	    /*stage('Git CheckOut') {
 		    steps {
 			   git branch: 'main', url: 'https://github.com/AdityaRai1998/msbuild.git'
 			}
-		}
+		}*/
 		//Static code analysis with Sonarqube
 		/*stage('SonarQube Analysis') 
         {
@@ -29,13 +29,13 @@ pipeline
                     }
                 }
             }
-        }
-        stage("Quality gate") 
+        }*/
+        /*stage("Quality gate") 
         {
             steps {
                waitForQualityGate abortPipeline: false, credentialsId: 'aditya'
             }
-        }
+        }*/
         stage('build') // Building the Application
         {
             steps
@@ -43,7 +43,7 @@ pipeline
                 bat "dotnet build ${myVariable} --configuration Release"
                 //C:\ProgramData\Jenkins\.jenkins\workspace\demo1\aspnet-core-dotnet-core
             }
-        }*/
+        }
         /*stage('Test')
         {
             steps
