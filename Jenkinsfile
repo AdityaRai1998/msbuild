@@ -8,7 +8,7 @@ pipeline
 	{
 	    stage('Git CheckOut') {
 		    steps {
-			   git branch: 'main', url: 'https://github.com/AdityaRai1998/sampleapp-1.git'
+			   git branch: 'main', url: 'https://github.com/AdityaRai1998/msbuild.git'
 			}
 		}
 		//Static code analysis with Sonarqube
